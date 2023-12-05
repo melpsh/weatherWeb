@@ -117,38 +117,38 @@ function setBackgroundVideo(apiData){
 
 function setBackGroundPhoto(apiData){
     let desc = apiData.weather[0].description;
-    if(apiData.weather[0].description === 'clear sky'){
-        document.body.style.backgroundImage = 'url("../images/sunny.jpg")';
-        icon.src= '../icons.sun.png';
-    }else if(apiData.weather[0].description === 'light rain'){
-        document.body.style.backgroundImage = 'url("../images/rain.jpeg")';
-        icon.src= '../icons.rainy.png';
-    }else if(apiData.weather[0].description === 'moderate rain'){
-        document.body.style.backgroundImage = 'url("../images/rain.jpeg")';
-        icon.src= '../icons.rainy.png';
-    }else if(apiData.weather[0].description === 'broken clouds'){
-        document.body.style.backgroundImage = 'url("../images/cloudy.jpg")';
-        icon.src= '../icons.cloudy.png';
-    }else if(apiData.weather[0].description === 'overcast clouds'){
-        document.body.style.backgroundImage = 'url("../images/cloudy.jpg")';
-        icon.src= '../icons.cloudy.png';
-    }else if(apiData.weather[0].description === 'scattered clouds'){
-        document.body.style.backgroundImage = 'url("../images/cloudy.jpg")';
-        icon.src= '../icons.cloudy.png';
-    }else if(apiData.weather[0].description === 'shower rain'){
-        document.body.style.backgroundImage = 'url("../images/rain.jpeg")';
-        icon.src= '../icons.rain.png';
-    }else if(apiData.weather[0].description === 'rain'){
-        document.body.style.backgroundImage = 'url("../images/rain.jpeg")';
-        icon.src= '../icons.rain.png';
-    }else if(apiData.weather[0].description === 'snow'){
-        document.body.style.backgroundImage = 'url("../images/snow.jpg")';    
-        icon.src= '../icons.snowflake.png';    
-    }else if(apiData.weather[0].description === 'mist'){
-        document.body.style.backgroundImage = 'url("../images/mist.jpg")';     
-        icon.src= '../icons.mist.png';   
+    if(desc === 'clear sky'){
+        document.body.style.backgroundImage = 'url("content/images/sunny.jpg")';
+        icon.src= 'content/icons/sun.png';
+    }else if(desc === 'light rain'){
+        document.body.style.backgroundImage = 'url("content/images/rain.jpeg")';
+        icon.src= 'content/icons/rainy.png';
+    }else if(desc === 'moderate rain'){
+        document.body.style.backgroundImage = 'url("content/images/rain.jpeg")';
+        icon.src= 'content/icons/rainy.png';
+    }else if(desc === 'broken clouds'){
+        document.body.style.backgroundImage = 'url("content/images/cloudy.jpg")';
+        icon.src= 'content/icons/cloudy.png';
+    }else if(desc === 'overcast clouds'){
+        document.body.style.backgroundImage = 'url("content/images/cloudy.jpg")';
+        icon.src= 'content/icons/cloudy.png';
+    }else if(desc === 'scattered clouds'){
+        document.body.style.backgroundImage = 'url("content/images/cloudy.jpg")';
+        icon.src= 'content/icons/cloudy.png';
+    }else if(desc === 'shower rain'){
+        document.body.style.backgroundImage = 'url("content/images/rain.jpeg")';
+        icon.src= 'content/icons/rain.png';
+    }else if(desc === 'rain'){
+        document.body.style.backgroundImage = 'url("content/images/rain.jpeg")';
+        icon.src= 'content/icons/rain.png';
+    }else if(desc === 'snow'){
+        document.body.style.backgroundImage = 'url("content/images/snow.jpg")';    
+        icon.src= 'content/icons/snowflake.png';    
+    }else if(desc === 'mist' || desc === 'haze'){
+        document.body.style.backgroundImage = 'url("content/images/mist.jpg")';     
+        icon.src= 'content/icons/mist.png';   
     }else{
-        document.body.style.backgroundImage = "https://th.bing.com/th/id/OIP.zEQ9yBq4dgvR9eDn0ip7iwHaE8?rs=1&pid=ImgDetMain";
+        document.body.style.backgroundImage = 'url("content/images/sunny.jpg")';
         icon.src = 'content/icons/snowflake.png';
     }
 }
